@@ -1,0 +1,208 @@
+
+body {
+    margin: 0;
+    background-color: #F2F7FB;
+    color: #10253A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.encabezado {
+    background-color: #0D699F;
+    color: #FFFFFF;
+    padding: 24px 16px;
+    text-align: center;
+    border-bottom: 6px solid #EEA123;
+}
+
+.universidad {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+}
+
+.encabezado h1 {
+    margin: 8px 0 0 0;
+    font-size: 32px;
+}
+
+
+.pagina {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+
+.instrucciones,
+.tarjeta {
+    background-color: #FFFFFF;
+    border: 1px solid #C9D9E6;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.instrucciones h2 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #0D699F;
+}
+
+.instrucciones li {
+    margin-bottom: 6px;
+}
+
+.minima {
+    background-color: #FFF4DC;
+    border-left: 6px solid #EEA123;
+    padding: 8px 12px;
+    margin: 12px 0 0 0;
+    font-weight: bold;
+}
+
+
+.tarjeta h2 {
+    margin: 0 0 4px 0;
+    font-size: 22px;
+}
+
+.porcentaje {
+    color: #4A5D70;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.nota-corte {
+    margin: 0 0 8px 0;
+    color: #0D699F;
+}
+
+.fila {
+    margin: 12px 0;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+}
+
+.caja {
+    width: 90px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #5A86A6;
+    border-radius: 8px;
+}
+
+.caja:focus {
+    outline: 3px solid #EEA123;
+}
+
+.error {
+    border: 2px solid #B03A25;
+    background-color: #FBE9E5;
+}
+
+
+.botones {
+    margin: 16px 0;
+}
+
+.boton {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 24px;
+    margin: 0 8px 8px 0;
+    border: 2px solid #0D699F;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.principal {
+    background-color: #0D699F;
+    color: #FFFFFF;
+}
+
+.principal:hover {
+    background-color: #08456B;
+}
+
+.secundario {
+    background-color: #FFFFFF;
+    color: #0D699F;
+}
+
+.secundario:hover {
+    background-color: #E8F1F8;
+}
+
+
+.etiqueta {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4A5D70;
+}
+
+.numero {
+    margin: 4px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.neutro {
+    background-color: #FFFFFF;
+    border-left: 6px solid #5A86A6;
+}
+
+.bien {
+    background-color: #E6F4EE;
+    border-left: 6px solid #13785C;
+}
+
+.alerta {
+    background-color: #FFF4DC;
+    border-left: 6px solid #EEA123;
+}
+
+.mal {
+    background-color: #FBE9E5;
+    border-left: 6px solid #B03A25;
+}
+
+.bien h2,
+.bien .numero {
+    color: #13785C;
+}
+
+.alerta h2,
+.alerta .numero {
+    color: #955900;
+}
+
+.mal h2,
+.mal .numero {
+    color: #B03A25;
+}
+
+.pie {
+    font-size: 13px;
+    color: #4A5D70;
+    text-align: center;
+}
+
+
+.logo {
+    height: 56px;
+    margin-bottom: 8px;
+}

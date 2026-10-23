@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de notas </title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <div class="encabezado">
+    <img class="logo" src="logo-udi-blanco.png" alt="UDI">
+    <p class="universidad">Universidad de Investigación y Desarrollo </p>
+    <h1>Calculadora de notas</h1>
+</div>
+
+    <div class="pagina">
+
+        
+        <div class="instrucciones">
+            <h2>Cómo se usa</h2>
+            <ol>
+                <li>Escribe cada nota entre 0 y 5. Puedes usar punto o coma (3.5 o 3,5).</li>
+                <li>Si todavía no tienes una nota, déjala en blanco.</li>
+                <li>Presiona el botón Calcular (o la tecla Enter).</li>
+                <li>Con los cortes 1 y 2 completos, la calculadora te dice cuánto necesitas en el corte 3 para pasar.</li>
+            </ol>
+            <p class="minima">La nota mínima definitiva para aprobar es 3.0</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Primer corte <span class="porcentaje">vale 30%</span></h2>
+            <p class="nota-corte">Nota del corte: <strong id="nota1">--</strong></p>
+            <p class="fila">
+                <label for="parcial1">Parcial <span class="porcentaje">20%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="parcial1" placeholder="0.0">
+            </p>
+            <p class="fila">
+                <label for="quiz1">Quiz <span class="porcentaje">5%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="quiz1" placeholder="0.0">
+            </p>
+            <p class="fila">
+                <label for="trabajo1">Trabajo <span class="porcentaje">5%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="trabajo1" placeholder="0.0">
+            </p>
+        </div>
+
+     
+        <div class="tarjeta">
+            <h2>Segundo corte <span class="porcentaje">vale 30%</span></h2>
+            <p class="nota-corte">Nota del corte: <strong id="nota2">--</strong></p>
+            <p class="fila">
+                <label for="parcial2">Parcial <span class="porcentaje">20%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="parcial2" placeholder="0.0">
+            </p>
+            <p class="fila">
+                <label for="quiz2">Quiz <span class="porcentaje">5%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="quiz2" placeholder="0.0">
+            </p>
+            <p class="fila">
+                <label for="trabajo2">Trabajo <span class="porcentaje">5%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="trabajo2" placeholder="0.0">
+            </p>
+        </div>
+
+    
+        <div class="tarjeta">
+            <h2>Tercer corte <span class="porcentaje">vale 40%</span></h2>
+            <p class="nota-corte">Nota del corte: <strong id="nota3">--</strong></p>
+            <p class="fila">
+                <label for="parcial3">Parcial <span class="porcentaje">30%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="parcial3" placeholder="0.0">
+            </p>
+            <p class="fila">
+                <label for="quiz3">Quiz <span class="porcentaje">5%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="quiz3" placeholder="0.0">
+            </p>
+            <p class="fila">
+                <label for="trabajo3">Trabajo <span class="porcentaje">5%</span></label>
+                <input type="text" inputmode="decimal" class="caja" id="trabajo3" placeholder="0.0">
+            </p>
+        </div>
+
+      
+        <div class="botones">
+            <button class="boton principal" onclick="calcular()">Calcular</button>
+            <button class="boton secundario" onclick="limpiar()">Limpiar todo</button>
+        </div>
+
+     
+        <div class="tarjeta neutro" id="resultado" aria-live="polite">
+            <p class="etiqueta">Nota definitiva</p>
+            <p class="numero" id="definitiva">--</p>
+            <h2 id="titulo">Aún no hay notas</h2>
+            <p id="mensaje">Escribe tus notas y presiona Calcular.</p>
+        </div>
+
+     
+        <div class="tarjeta neutro" id="extra" aria-live="polite">
+            <p class="etiqueta">¿Cuánto necesito en el corte 3 para pasar?</p>
+            <p class="numero" id="necesito">--</p>
+            <p id="explicacion">Completa las tres notas del corte 1 y del corte 2 y presiona Calcular.</p>
+        </div>
+
+        <p class="pie">Los resultados se muestran con dos decimales. La nota que necesitas se redondea hacia arriba
+            para que no te quedes corto. Proyecto académico, Desarrollado por Salomon Camargo Duran.</p>
+
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
